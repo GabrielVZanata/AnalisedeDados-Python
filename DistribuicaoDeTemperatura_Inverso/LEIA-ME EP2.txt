@@ -1,0 +1,49 @@
+﻿Este é o guia de utilização para o programa elabarado para a disciplina de Cálculo Numérico da Poli.
+
+O código foi implementado em Python 3.7 no editor Spyder da distribuição Anaconda 3
+portanto recomenda-se que esse seja o software a ser utilizado na execução do programa.
+
+
+EXPLICAÇÕES GERAIS SOBRE O CÓDIGO
+
+De forma geral o código foi feito pensando na organização e facilidade de entendimento
+portanto será possível notar o grande espaçamento utilizado entre as diferentes partes
+do programa. 
+No inicio do código estão os dados básicos sobre o programa seguido da importação das 
+bibliotecas utilizadas, sendo estas: numpy, para facilitar as operações vetoriais, 
+matplotlib, para facilitar a apresentação dos resultados por meio de gráficos coloridos 
+em 2D e random para gerar números aleatórios de 0 a 1.
+Em seguida são criados e definidos os parâmetros comuns à maior parte dos laços do
+programa, para evitar repetições, sendo estes os parâmetros para o cálculo da intensidade 
+da fonte, montagem e resolução de sistemas.
+Então se iniciam os laços referentes a cada teste com seus respectivos parâmetros 
+específicos.
+Ao final do programa, são definidos os resultados finais que serão apresentados ao
+usuário e definidos os parâmetros específicos para a plotagem dos dados.
+
+
+GUIA DE UTILIZAÇÃO
+
+1) Uma vez iniciado o programa o usuário receberá a mensagem "Qual item deseja rodar 
+(a=1, b=2 e c=3 ou d=4)? ", e deverá tomar uma das atitudes abaixo:
+	- digitar 1 e pressionar enter, caso deseje executar o teste A do enunciado 
+          do EP2 ou
+	- digitar 2 e pressionar enter, caso deseje executar o teste B do enunciado 
+          do EP2 ou
+	- digitar 3 e pressionar enter, caso deseje executar o teste C do enunciado 
+          do EP2 ou
+	- digitar 4 e pressionar enter, caso deseje executar o teste D do enunciado 
+          do EP2 ou
+
+2) Finalmente, o programa deve retornar:
+	- Para todos os itens (com exceção do teste C e D):
+ 	  	O vetor solução Xa de intensidades pontuais, o erro quadrático e o 
+		gráfico de temperatura por seção e componentes de intensidade no instante T.
+
+CASO ESPECIAL
+3) Se escolhido o teste C ou D no passo 1, o programa deverá:
+	- Apresentar a seguinte mensagem "Digite o valor de N:" onde tal valor deve ser 
+	  digitado pelo usuário seguido de um enter.  
+
+	- Retornar o vetor solução Xa de intensidades pontuais, o erro quadrático e o 
+	  gráfico de temperatura por seção e componentes de intensidade.

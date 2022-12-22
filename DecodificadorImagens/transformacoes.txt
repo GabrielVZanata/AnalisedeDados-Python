@@ -1,0 +1,11 @@
+5
+# mover 10 pixels para cima e para direita
+1 0 10 0 1 10
+# mover 20 pixels para baixo e para esquerda
+1 0 -20 0 1 -20
+# espelhar
+-1 0 0 0 -1 0
+# deformar 45 graus no eixo x
+1 1 0 0 1 0
+# deformar 45 graus no eixo y
+1 0 0 1 1 0

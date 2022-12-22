@@ -1,0 +1,89 @@
+Este é o guia de utilização para o programa elaborado para a disciplina de Cálculo Numérico da Poli: 
+
+O código foi implementado em Python 3.7 no editor Spyder da distribuição Anaconda 3
+portanto recomenda-se que esse seja o software a ser utilizado na execução do programa.
+
+
+
+EXPLICAÇÕES GERAIS SOBRE O CÓDIGO
+
+De forma geral o código foi feito pensando na organização e facilidade de entendimento
+portanto será possível notar o grande espaçamento utilizado entre as diferentes partes
+do programa. 
+No inicio do código estão os dados básicos sobre o programa seguido da importação das 
+bibliotecas utilizadas, sendo estas: numpy, para facilitar as operações vetoriais e 
+matplotlib e alguns de seus complementos, para facilitar a apresentação dos resultados
+por meio de gráficos coloridos em 3D.
+Em seguida são criados e definidos os parâmetros comuns à maior parte dos laços do
+programa, para evitar repetições, sendo estes os parâmetros de cálculos de temperatura
+na barra e parâmetros gráficos básicos, como a definição da malha 3D.
+Então se iniciam os laços referentes a cada tarefa, item e método, com seus respectivos
+parâmetros específicos.
+Ao final do programa, são definidos os resultados finais que serão apresentados ao
+usuário e definidos os parâmetros específicos para a plotagem dos dados.
+
+GUIA DE UTILIZAÇÃO
+
+1) Uma vez iniciado o programa o usuário receberá a mensagem "Qual tarefa deseja rodar 
+(1 ou 2)? ", e deverá tomar uma das atitudes abaixo:
+	- digitar 1 e pressionar enter, caso deseje executar algum item da primeira 
+	tarefa do enunciado do EP1 ou
+	- digitar 2 e pressionar enter, caso deseje executar algum item da segunda
+	tarefa do enunciado do EP1.
+
+2) Em seguida o programa perguntará "Qual item deseja rodar (a=1, b=2 e c=3)? ". Tome
+uma das atitudes abaixo:
+	- digitar 1 e pressionar enter, caso deseje executar o item A da tarefa
+	escolhida no passo anterior,
+	- digitar 2 e pressionar enter, caso deseje executar o item B da tarefa 
+	escolhida no passo anterior ou
+	- digitar 3 e pressionar enter, caso deseje executar o item C da tarefa 
+	escolhida no passo anterior.
+
+3) Então serão apresentadas as seguintes mensagens "Digite o valor de N:" e 
+"Digite o valor de Lbd:" onde devem ser digitados, respectivamente, os valores de N e
+Lambda desejados. Note que o valor de M será calculado conforme o valor de Lambda para 
+facilitar a execução dos testes.
+
+4) Caso a tarefa 2 tenha sido escolhida no passo 1, bem como os itens B ou C, o 
+programa perguntará "Qual situação do item 1 deseja rodar (a=1, b=2 e c=3)?", onde 
+deve-se:
+	- digitar 1 e pressionar enter, caso deseje executar o item atual com os 
+	parâmetros do item A da tarefa 1,
+	- digitar 2 e pressionar enter, caso deseje executar o item atual com os 
+	parâmetros do item B da tarefa 1 ou
+	- digitar 3 e pressionar enter, caso deseje executar o item atual com os 
+	parâmetros do item C da tarefa 1.
+
+5) Finalmente, o programa deve retornar:
+
+	- Para todos o itens (com exceção do 2-A): 
+		Os valores de N, Lbd e M de entrada (para conferência visual); 
+		a matriz de temperaturas U e o gráfico de distribuição de temperatura.
+	
+	- Para os itens A e B (tarefa 1) e B e C (tarefa 2), se executados com os 
+	parâmetros de A e B (da tarefa 1): 
+		O valor de erro máximo ao longo do espaço e tempo e um vetor com os 
+		erros ao longo do espaço no instante T. (além dos retornos já 
+		mencionados anteriormente)
+
+	- Para o item A (tarefa 1):
+		O valor do erro máximo de truncamento no instante T. (além dos retornos
+		já mencionados anteriormente)
+
+CASO ESPECIAL
+6) Se escolhido o item A da tarefa 2, o programa deverá:
+	- Pedir os valores de N e Lbd como nos demais itens, além de um vetor b de 
+	tamanho N-1 onde cada componente deverá ser digitado seguido de um enter 
+	(portanto aconselha-se o uso de valores pequenos de N), necessário lembrar que 
+	cada um dos tais componentes podem possuir qualquer valor escolhido pelo usuário.
+	Exemplo: Para N=4, o programa pedirá a digitação de um número 3 vezes (N-1) e
+	se o usuário digitar 2 (enter), 5 (enter) e 9 (enter), o programa retornará um 
+	buscará a solução para o sistema linear A*x = [2,5,9]. 
+
+	- Retornar os valores de N e Lbd (para conferência visual) e três vetores
+	sendo, respectivamente, D (vetor com os valores da diagonal decomposta de A),
+	L (vetor com os valores da subdiagonal decomposta de A) e xsol (vetor solução
+	do sistema linear Ax = b).
+		
+	
